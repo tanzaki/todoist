@@ -4,6 +4,12 @@
 <div ng-app="ung_dung_quan_ly_cong_viec">
     <div ng-repeat="tung_cong_viec in danh_sach_cong_viec">
         {{tung_cong_viec}}
+        <div>
+            <b>
+                Tên công việc: {{tung_cong_viec.ten_viec}}.
+                Có trạng thái {{tung_cong_viec.trang_thai}}
+            </b>
+        </div>
     </div>
 </div>
 <script>
