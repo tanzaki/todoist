@@ -3,13 +3,25 @@
 <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
 <div ng-app="ung_dung_quan_ly_cong_viec">
     {{5+6}}
+    {{danh_sach_cong_viec}}
 </div>
 <script>
     angular
         .module("ung_dung_quan_ly_cong_viec", [])
         .run(function ($rootScope) {
             $rootScope.danh_sach_cong_viec = [
-
+                {
+                    "ten_viec": "học AngualarJS",
+                    "trang_thai": "da-xong"
+                },
+                {
+                    "ten_viec": "thực hành AngularJS",
+                    "trang_thai": "chua-xong"
+                },
+                {
+                    "ten_viec": "xin thực tập",
+                    "trang_thai": "chua-xong"
+                }
             ]
         })
 </script>
