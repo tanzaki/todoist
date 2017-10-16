@@ -9,4 +9,7 @@
 <script>
     angular
         .module('ung_dung_quan_ly_cong_viec', [])
+        .run(function ($rootScope) {
+            $rootScope.danh_sach_cong_viec = []
+        })
 </script>
